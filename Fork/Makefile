@@ -8,3 +8,7 @@ frkout:frk.o
 	cc -o frkout frk.c
 
 frk.o:frk.c
+
+clean:
+	rm -rf *.o frkout
+
