@@ -8,7 +8,7 @@
 
 ##########################################################################################################
 dynamicout:main.o libdynamic.so
-	cc -o dynamicout main.c ./libdynamic.so
+	cc -o dynamicout main.c libdynamic.so
 
 libdynamic.so: mul.o sum.o 
 	cc -shared -o libdynamic.so sum.o mul.o
