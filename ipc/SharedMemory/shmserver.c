@@ -18,7 +18,7 @@ int main()
 	char *val=(char*)addr;
 	strcpy(val,"REQUEST");
 	system("./shmclient");
-	printf("PID for shmserver:%d\n",getpid());
+	printf("Value for shmserver:%d is %s\n",getpid(),val);
 	shmdt(&addr);
 	shmctl(shmid,IPC_RMID,NULL);
 	return 0;
