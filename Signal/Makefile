@@ -3,3 +3,6 @@ sigout:signal.o
 
 signal.o:signal.c
 
+clean:
+	rm -rf *.o signal.o
+
