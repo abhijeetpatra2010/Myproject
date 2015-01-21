@@ -6,7 +6,7 @@ int main()
 {
 	void *addr;
 	key_t key;
-	key=(key_t)2000;
+	key=(key_t)2004;
 	int shmid;
 	shmid=shmget(key,1000,0666);
 	if(shmid<0)
@@ -15,7 +15,7 @@ int main()
 	}
 	addr=shmat(shmid,NULL,0);
 	char *val=(char*)addr;
-	strcpy(val,"RESPONSE");
+	strcpy(val,"response");
 	
 	printf("PID for shmclient:%d\n",getpid());
 	shmdt(&addr);

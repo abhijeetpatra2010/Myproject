@@ -7,7 +7,7 @@
 int main()
 {
 	void *addr;
-	key_t key=(key_t)2000;
+	key_t key=(key_t)2004;
 	int shmid;
 	shmid=shmget(key,2000,IPC_CREAT|0666);
 	if(shmid<0)
