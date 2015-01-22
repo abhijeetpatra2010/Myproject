@@ -4,3 +4,6 @@ server:server.o
 client:client.o
 	cc client.c -o client
 
+clean:
+	rm -rf client server *.o
+
