@@ -17,3 +17,6 @@ mul.o:mul.c
 	cc -c mul.c	
 
 main.o:main.c
+
+clean:
+	rm -rf *.o libstatic.a staticout
