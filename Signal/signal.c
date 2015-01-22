@@ -6,9 +6,8 @@ void isr(int n)
 }
 int main()
 {
-	printf("Press CTRL-C:");
-
-	
+	printf("Press CTRL-C:\n");
 	signal(SIGINT,isr);
 	while(1);
 }
+
