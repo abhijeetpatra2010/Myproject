@@ -20,3 +20,7 @@ mul.o:mul.c
 	cc -c -fpic mul.c	
 
 main.o:main.c
+
+clean:
+	rm -rf dynamicout *.o
+
