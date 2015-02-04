@@ -1,0 +1,10 @@
+1) Install RPM
+2) Create Directories (BUILD,RPMS,SOURCES,tmp,SRPMS,SPECS,BUILDROOT)
+3) Create a source file inside another directory and then create a tar file for source.
+4) Move this tar file inside the SOURCES directory.
+5) Then Build the rpm spec inside SPECS directory.
+	rpmbuild -ba new.spec
+6) Now it will create an rpm .
+7) Install the rpm
+	rpm -ivh sample_rpm-1.0-1.x86_64.rpm
+
